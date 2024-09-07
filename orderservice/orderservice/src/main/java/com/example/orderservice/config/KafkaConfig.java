@@ -98,7 +98,7 @@ public class KafkaConfig {
     }
 
     @Bean
-    private CommonErrorHandler commonErrorHandler() {
+    public CommonErrorHandler commonErrorHandler() {
         return new CommonErrorHandler() {
 
             @Override

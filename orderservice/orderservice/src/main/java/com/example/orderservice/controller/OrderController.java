@@ -1,5 +1,6 @@
 package com.example.orderservice.controller;
 
+import com.example.orderservice.dto.Employee;
 import com.example.orderservice.dto.PaymentRequest;
 import com.example.orderservice.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -71,17 +72,3 @@ public class OrderController {
         return employee1;
     }
 }
-
-record Employee(
-        int id,
-        String firstName,
-        String lastName,
-        String email,
-        String phoneNumber,
-        String department,
-        String position,
-        double salary,
-        String address,
-        String hireDate
-) {}
-
